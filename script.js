@@ -1,7 +1,7 @@
 let nama = document.getElementById("nama");
 let barang = document.getElementById("barang");
 let jumlah = document.getElementById("jumlah");
-
+let keterangan = document.getElementById("keterangan");
 
 function simpan() {
     //jika local sotrage belum ada isi
@@ -18,7 +18,8 @@ function simpan() {
     data.push({
         nama: nama.value,
         barang: barang.value,
-        jumlah: jumlah.value
+        jumlah: jumlah.value,
+        keterangan: keterangan.value
     })
     console.log(data)
 
@@ -42,7 +43,9 @@ function tampil(){
                 <div class="card-body">
                     <h4 class="text-primary">${element.nama}</h4>
                     <h6 class="text-primary">${element.barang}</h6>
+                    <h6 class="text-primary">${element.keterangan}</h6>
                     <h6 class="text-primary">${element.jumlah}</h6>
+                    
                 </div>
         </div>`
     });
