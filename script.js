@@ -37,17 +37,13 @@ function tampil(){
     document.getElementById("daftar-belanja").innerHTML = ""
     //lakukan perulangan (foreach)
     hasil.forEach(element => {
-        document.getElementById("daftar-beloanja").innerHTML += `
-        <div class="col-lg-4 col-md-6 mb-3">
-            <div class="card p-2">
-                <img src="${element.image}" class="card-img-top" object-fit:contain style="height:200px;">
+        document.getElementById("daftar-belanja").innerHTML += `
+        <div class="col-lg-3 col-md-6 mb-3">
                 <div class="card-body">
                     <h4 class="text-primary">${element.nama}</h4>
                     <h6 class="text-primary">${element.barang}</h6>
                     <h6 class="text-primary">${element.jumlah}</h6>
-
                 </div>
-            </div>
         </div>`
     });
 }
